@@ -1,0 +1,45 @@
+{%load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{%block title%}schoolapp{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/external.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="{% static 'bootstrap/css/bootstrap.css %'}">
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="{% url 'index'%}"> School App</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+         data aria-controls="navbarNav" aria-expanded="false" aria-label="toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+    <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link"href="{%url 'index'%}">Home</a></li>
+        <li class="nav-item"><a class="nav-link"href="{%url 'about'%}">About</a></li>
+        <li class="nav-item"><a class="nav-link"href="{%url 'contact'%}">Contact us</a></li>
+    </ul>
+   
+    </div>
+    </div>
+</nav>
+<div class="container">
+    <img src="{% static 'images/school.jpeg %'}" alt="">
+    <main>
+{%block content%}
+{%endblock%}
+    </main>
+
+</div>
+ 
+<footer class="bg-primary text-white text-center py-3 mt-4">
+&copy;school app 2025.All rights reserved.
+</footer>
+<script src="{% static 'bootstrap.js/bootstrap.js'}"></script>
+</body>
+</html>

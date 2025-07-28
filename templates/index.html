@@ -1,0 +1,12 @@
+
+{%extends 'base.html'%}
+{%block content%}
+<h1>welcome to my school website</h1>
+<p>eMobilis school</p>
+{% load static %}
+<img src="{%static 'images/school.jpeg'%}">
+<h2>skills</h2>
+{% for x in skills %}
+<li>{{x}}</li>
+{% endfor %}
+{% endblock %}

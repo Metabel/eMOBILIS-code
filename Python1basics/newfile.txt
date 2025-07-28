@@ -1,0 +1,3 @@
+Hello python
+writing to files in python
+this is appended text
