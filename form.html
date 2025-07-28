@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Forms</title>
+</head>
+<body>
+<h2>A simple form</h2>
+<form>
+    <label>Name:</label>
+    <input type="text" id="name" name="username"><br>
+    <label>Phone</label>
+    <input type="number" id="phone" name="phonenumber"><br>
+    <button type="submit">Submit</button>
+</form>
+<h3>Registration Form</h3>
+<form>
+    <fieldset>
+        <legend>Personal Information</legend>
+    <label for="fname">Full Name</label><br>
+    <input type="text" id="fname" name="fullname" ><br>
+    <label for="email">Email</label><br>
+    <input type="email" id="email" name="email"><br>
+    <label for="psw">Password</label><br>
+    <input type="password" id="psw" name="password"><br>
+    <label>Gender:</label><br>
+    <label for="male">Male</label>
+     <input type="radio" id="male" name="gender"><br>
+    <label for="female">Female</label>
+    <input type="radio" id="female" name="gender"><br>
+    <button type="submit">Submit</button><br>
+    <label for="dob">Date of Birth</label>
+    <input type="date" id="dob" name="dob"><br>
+    </fieldset>
+    <fieldset>
+        <legend>Academic Information</legend>
+    <label for="courses">Course</label><br>
+    <select id="courses">
+        <option>Full sack software development</option>
+        <option>Cyber Security</option>
+        <option>Data Science</option>
+         <option>Python</option>
+         <option>Machine Learning</option>
+    </select><br>
+    <textarea cols="30" rows="10">Tell us about yourself</textarea><br>
+    <label for="file">Upload files</label>
+    <input type="file" id="file" name="file"><br>
+    <input type="checkbox">Accept terms and conditions<br>
+    </fieldset>
+    <button type="submit">Register</button><br>
+    <button type="reset">Clear</button><br>
+</form>
+<h4>Contact us</h4>
+<form>
+    <label for="fname">Firstname</label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lname">Last name</label><br>
+    <input type="text" id="lname" name="lname"><br>
+    <label for="email">Email</label><br>
+    <input type="email" id="email" name="email"><br>
+    <textarea cols="30" rows="10">Write something</textarea><br>
+    <button type="submit"> Submit</button><br>
+</form>
+</body>
+</html>

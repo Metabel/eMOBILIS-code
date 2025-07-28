@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+    #one{
+       /* animation-name: myanimation;
+        animation-duration: 3s;
+        animation-iteration-count: 4;*/
+        animation:myanimation 3s 4;
+    }
+    #two{
+        animation:slidein 5s infinite
+    }
+    #three{
+        background-color: aqua;
+        width:200px;
+        height: 200px;
+        animation-name:spin;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+    #btn{
+        background-color: aqua;
+        padding: 10px 20px;
+        color: wheat;
+        border: none;
+        transition: background-color 0.4s ease, transform 0.4s ease;
+    }
+    #btn:hover{
+        background-color: yellow;
+        transform:scale(1.1);
+
+    }
+    @keyframes spin{
+        0%{transform:rotate(odeg);
+        background-color: antiquewhite;}
+        100%{transform:rotate(360deg);}
+    background-color:yellow;}
+    
+    @keyframes slidein{
+        0%{transform:translatex(0);
+            color:blue}
+        
+        100%{transform:translatex(600px);
+            color:green;
+        }
+    }
+    @keyframes myanimation{
+    
+        0%{color: blue;}
+            50%{color:red}
+            100%{color:yellow}
+    }
+        
+    </style>
+</head>
+<body>
+    <h1 id="two">Welcome to my Site</h1>
+    <div id="three">
+        <p>Hello there</p>
+    </div>
+<p id="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium reprehenderit, repellat similique consequatur eligendi illo iusto a magni possimus eum ab excepturi, est, magnam impedit laboriosam maiores nihil porro perferendis.</p>
+<button id="btn">Click me</button>
+
+</body>
+</html>
